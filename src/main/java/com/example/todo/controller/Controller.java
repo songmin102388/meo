@@ -13,7 +13,7 @@ public class Controller {
     private final MemoRepository memoRepository;
 
     @GetMapping ("/")
-    public String hello(Model model){
+    public String index(Model model){
         model.addAttribute("memo", memoRepository.findAll());
 
         return "hello";
